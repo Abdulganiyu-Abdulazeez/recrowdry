@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+}
+
+$bg: rgb(85, 85, 246);
+
+@mixin button ($size, $weight, $bg, $color, $py, $px, $rounded) {
+    background-color: $bg;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    padding: $py $px;
+    border: none;
+    border-radius: $rounded;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    // font-family: 'Livvic', sans-serif;
+}
+
+.navigation {
+    @extend %flex;
+    justify-content: space-between;
+    padding: 1rem;
+    .logo {
+        @extend %flex;
+        gap: 8px;
+    }
+
+    .nav-link {
+        @extend %flex;
+        gap: 3rem;
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            button {
+                @include button (18px, 600, $bg, white, 1rem, 2rem, 40px);
+            }
+        }
+    }
+}
+
