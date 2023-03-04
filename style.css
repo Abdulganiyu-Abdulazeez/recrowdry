@@ -1,3 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.navigation .nav-link, .navigation .logo, .navigation {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.navigation {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navigation .logo {
+  gap: 8px;
+}
+.navigation .nav-link {
+  gap: 3rem;
+}
+.navigation .nav-link a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.navigation .nav-link a button {
+  background-color: rgb(85, 85, 246);
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
