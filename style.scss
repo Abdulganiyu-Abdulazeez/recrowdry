@@ -9,6 +9,14 @@
     align-items: center;
 }
 
+%flexdisplay {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 $bg: rgb(85, 85, 246);
 
 @mixin button ($size, $weight, $bg, $color, $py, $px, $rounded) {
@@ -62,7 +70,7 @@ body {
         justify-content: center;
         flex-direction: column;
         gap: 3rem;
-        width: 65rem;
+        width: 60rem;
         h1 {
             @include button (5rem, 900, 0, 0, 0, 0, 0);
             text-align: center;
@@ -73,6 +81,33 @@ body {
         }
         button {
             @include button (18px, 600, rgb(81, 81, 250), white, 1rem, 2rem, 40px);
+        }
+    }
+}
+
+.section-two {
+    @extend %flexdisplay;
+    padding: 5rem;
+    .top {
+        @extend %flex;
+        justify-content: space-between;
+        width: 100%;
+        .story {
+            @extend %flexdisplay;
+            h1 {
+                @include button (30px, 900, 0, rgb(81, 81, 250), 0, 0, 0);
+                width: 20rem;
+            }
+            p {
+                width: 26rem;
+            }
+            h5 {
+                width: 20rem;
+            }
+        }
+        img {
+            width: 25rem;
+            height: 15rem;
         }
     }
 }
