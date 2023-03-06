@@ -430,3 +430,49 @@ body {
         }
     }
 }
+.section-five {
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    @extend %flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+    .text {
+        @extend %flexdisplay;
+        margin: 2rem;
+        .logo {
+            @extend %flex;
+        }
+        .light {
+            h1 {
+                @include  button(40px, 900, 0, white, 0, 0, 0);
+            }
+        }
+        .web {
+            @extend %flex;
+            input {
+                width: 20rem;
+                height: 3rem;
+                @include button(15px, 400, 0, whitesmoke, 1rem, 1rem, 0);
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            .subscribe {
+                @include button(15px, 600, rgb(81, 81, 250), white, 1rem, 1rem, 0);
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                width: 10rem;
+                height: 3rem;
+            }
+        }
+    }
+}
+
+.vector {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top: -15rem;
+    left: 63.9rem;
+}
