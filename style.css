@@ -9,12 +9,12 @@
   z-index: 20;
 }
 
-.section-three .pricing .container .content, .section-three .pricing, .section-three .service .container .content .offer, .section-three .service .container .content, .section-three .service, .work, .section-two .top, .landing-banner div, .landing-banner, .navigation .nav-link, .navigation .logo, .navigation {
+.section-four .container .left, .section-four .container, .section-four, .section-three .pricing .container .content, .section-three .pricing, .section-three .service .container .content .offer, .section-three .service .container .content, .section-three .service, .work, .section-two .top, .landing-banner div, .landing-banner, .navigation .nav-link, .navigation .logo, .navigation {
   display: flex;
   align-items: center;
 }
 
-.work .grid .video {
+.section-four .container .content .bg, .work .grid .video {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -276,7 +276,7 @@ body {
 
 .section-three {
   width: 100%;
-  height: 220vh;
+  height: 230vh;
   background-color: black;
 }
 .section-three img {
@@ -395,6 +395,87 @@ body {
   gap: 5px;
   justify-content: center;
   padding: 1rem;
+}
+
+.section-four {
+  width: 100%;
+  height: 70vh;
+  padding: 2rem;
+  gap: 3rem;
+}
+.section-four .shape {
+  margin-top: -4rem;
+}
+.section-four .shape div {
+  width: 8rem;
+  height: 4rem;
+  background-color: rgb(81, 81, 250);
+}
+.section-four .shape p {
+  width: 4rem;
+  height: 3rem;
+  background-color: rgb(81, 81, 250);
+}
+.section-four .container {
+  position: relative;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.section-four .container .left {
+  background-color: 0;
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  padding: 0 0;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+}
+.section-four .container .content {
+  width: 21rem;
+  height: 19rem;
+  position: relative;
+}
+.section-four .container .content img {
+  background-color: 0;
+  font-size: 0;
+  color: 0;
+  font-weight: 0;
+  padding: 0 0;
+  border: none;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: -1rem;
+  left: 7rem;
+  z-index: 30;
+}
+.section-four .container .content .bg {
+  background-color: rgb(81, 81, 255);
+  width: 20rem;
+  height: 18rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding: 5rem 2rem 2rem;
+  color: white;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.section-four .container .content .bg div {
+  width: 2rem;
+  height: 1px;
+  background-color: whitesmoke;
+}
+.section-four .container .content .smoke {
+  background-color: whitesmoke;
+  width: 20rem;
+  height: 18rem;
+  position: relative;
+  top: -17rem;
+  left: 1rem;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=style.css.map */
