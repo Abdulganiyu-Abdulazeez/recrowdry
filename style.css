@@ -9,7 +9,7 @@
   z-index: 20;
 }
 
-.section-four .container .left, .section-four .container, .section-four, .section-three .pricing .container .content, .section-three .pricing, .section-three .service .container .content .offer, .section-three .service .container .content, .section-three .service, .work, .section-two .top, .landing-banner div, .landing-banner, .navigation .nav-link, .navigation .logo, .navigation {
+.section-five .text .web, .section-five .text .logo, .section-five, .section-four .container .left, .section-four .container, .section-four, .section-three .pricing .container .content, .section-three .pricing, .section-three .service .container .content .offer, .section-three .service .container .content, .section-three .service, .work, .section-two .top, .landing-banner div, .landing-banner, .navigation .nav-link, .navigation .logo, .navigation {
   display: flex;
   align-items: center;
 }
@@ -21,7 +21,7 @@
   gap: 2rem;
 }
 
-.section-two .top .story, .section-two {
+.section-five .text, .section-two .top .story, .section-two {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -476,6 +476,61 @@ body {
   top: -17rem;
   left: 1rem;
   z-index: 10;
+}
+
+.section-five {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+.section-five .text {
+  margin: 2rem;
+}
+.section-five .text .light h1 {
+  background-color: 0;
+  font-size: 40px;
+  color: white;
+  font-weight: 900;
+  padding: 0 0;
+  border: none;
+  border-radius: 0;
+}
+.section-five .text .web input {
+  width: 20rem;
+  height: 3rem;
+  background-color: 0;
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: 400;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.section-five .text .web .subscribe {
+  background-color: rgb(81, 81, 250);
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 10rem;
+  height: 3rem;
+}
+
+.vector {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  top: -15rem;
+  left: 63.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
